@@ -1,0 +1,25 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "author": {
+    "name": "Gokhan Katar",
+    "email": "katar_gokhan@hotmail.com",
+    "job": "Web Developer"
+  },
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev --open",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxtjs/google-fonts": "^3.2.0",
+    "@nuxtjs/i18n": "^8.5.1",
+    "nuxt": "^3.13.0",
+    "nuxt-swiper": "^1.2.2",
+    "vue": "latest",
+    "vuetify-nuxt-module": "^0.17.1"
+  }
+}

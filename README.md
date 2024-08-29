@@ -1,0 +1,4 @@
+- navbar dil degisimleri yapılacak
+- navbar link atamaları yapılacak
+- asagı indiginde navbar renk degistirecek
+- navbar responsive yapılacak
