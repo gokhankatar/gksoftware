@@ -3,9 +3,9 @@
     <video autoplay muted loop playsinline>
       <source :src="bgVideo" type="video/mp4" />
     </video>
-    <div class="content d-flex flex-column ga-2">
-      <h1 class="text-h1">GK SOFTWARE</h1>
-      <h3 class="text-h5 text-end">Web Applications</h3>
+    <div class="content d-flex flex-column ga-1 ga-sm-2">
+      <h1 class="text-h5 text-sm-h3 text-md-h1">GK SOFTWARE</h1>
+      <h3 class="text-caption text-sm-subtitle-1 text-center text-sm-end">Web Applications</h3>
     </div>
     <v-icon
       class="sound-icon pa-5 rounded-xl transition-lg cursor-pointer"
