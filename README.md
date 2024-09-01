@@ -1,4 +1,4 @@
-- navbar dil degisimleri yapılacak
-- navbar link atamaları yapılacak
-- asagı indiginde navbar renk degistirecek
 - navbar responsive yapılacak
+- api da resim atamaları yapılacak
+- projects sayfasını duzenleyebilirsin
+- loading animation
