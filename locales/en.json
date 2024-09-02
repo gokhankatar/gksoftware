@@ -1,5 +1,26 @@
 {
     "showcase": "Showcase",
     "projects": "Projects",
-    "resume": "Resume"
+    "resume": "Resume",
+    "title": "Title",
+    "description": "Description",
+    "go-back": "Go Back",
+    "technologies": "Technologies",
+    "see-this-project": "See this project",
+    "follow-yourself": "Follow Yourself",
+    "get-country": "Get Country",
+    "chat-app": "Chat App",
+    "blog-app": "Blog App",
+    "merchantile-app": "Merchantile App",
+    "crypto-app": "Crypto Tracker",
+    "academy":"Personal Academician Site",
+    "food-app":"Food App",
+    "follow-yourself-desc": "A web application that allows you to track your activities.",
+    "get-country-desc": "A web application that contains a lot of information about all countries in the world.",
+    "chat-app-desc": "A basic chat application.",
+    "blog-app-desc": "A simple blog application.",
+    "food-app-desc": "A basic cafeteria application.",
+    "merchantile-app-desc": "It is a trading application developed with front-end and back-end. Auto logout. Add/delete/update product. You can save your products, favorite them or mark them as sold and display them on your relevant pages. At the same time, the total of your sold products and your total earnings will be displayed on your sold page. View products from relevant categories. View the products you have uploaded to the platform together on your 'My Products' page.",
+    "academy-desc": "It is a full stack web application where an academic can share, add, delete and update many of his/her activities such as his/her studies, blog posts, CV. He/she can do these only by logging into the admin panel interface. It is made upon request.",
+    "crypto-app-desc": "A web application where every user can add and track any cryptocurrency they want to their watchlist."
 }
