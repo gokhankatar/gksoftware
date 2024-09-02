@@ -1,4 +1,7 @@
 {
+    "clone": "Bu deponun klonunu oluştur",
+    "go-to-project": "Projeye git",
+    "home": "Anasayfa",
     "showcase": "Vitrin",
     "projects": "Projeler",
     "resume": "Özgeçmiş",

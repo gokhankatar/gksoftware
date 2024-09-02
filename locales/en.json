@@ -1,4 +1,7 @@
 {
+    "clone": "Clone this repostory",
+    "go-to-project": "Go to project",
+    "home": "Home",
     "showcase": "Showcase",
     "projects": "Projects",
     "resume": "Resume",
@@ -13,8 +16,8 @@
     "blog-app": "Blog App",
     "merchantile-app": "Merchantile App",
     "crypto-app": "Crypto Tracker",
-    "academy":"Personal Academician Site",
-    "food-app":"Food App",
+    "academy": "Personal Academician Site",
+    "food-app": "Food App",
     "follow-yourself-desc": "A web application that allows you to track your activities.",
     "get-country-desc": "A web application that contains a lot of information about all countries in the world.",
     "chat-app-desc": "A basic chat application.",

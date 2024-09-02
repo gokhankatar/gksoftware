@@ -1,4 +1,4 @@
 - navbar responsive yapılacak
-- api da resim atamaları yapılacak
-- projects sayfasını duzenleyebilirsin
 - loading animation
+- kopyalama işini yap ve sağ altta progressing olarak göster
+- proje detay sayfalarındaki resimlerin karanlık mod olanlarını seç

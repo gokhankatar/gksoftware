@@ -64,7 +64,7 @@ export default eventHandler((event) => {
       id: "123jdnsjn213ujk",
       title: "food-app",
       description: "food-app-desc",
-      link: "https://github.com/gokhankatar/crypto-tracker",
+      link: "https://github.com/gokhankatar/food-app",
       technologies: [
         "vue",
         "vue-router",
