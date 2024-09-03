@@ -4,7 +4,7 @@
       <source :src="bgVideo" type="video/mp4" />
     </video>
     <div class="content d-flex flex-column ga-1 ga-sm-2">
-      <h1 class="text-h5 text-sm-h3 text-md-h1">GK SOFTWARE</h1>
+      <h1 class="big-header text-h5 text-sm-h3 text-md-h1">GK SOFTWARE</h1>
       <h3 class="text-caption text-sm-subtitle-1 text-center text-sm-end">
         Web Applications
       </h3>
@@ -23,9 +23,7 @@ import { onMounted, ref } from "vue";
 
 const isPlaying = ref(true);
 const bgSound = ref<HTMLAudioElement | null>(null);
-const { t } = useI18n(
-  
-);
+const { t } = useI18n();
 useHead({
   title: `GK SOFTWARE | ${t("home")}`,
 });
@@ -69,7 +67,11 @@ onMounted(() => {
   height: 100%;
   object-fit: cover;
 }
-
+.big-header {
+  font-weight: bold;
+  letter-spacing: 0.1rem !important;
+  text-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.1);
+}
 .content {
   position: absolute;
   top: 50%;

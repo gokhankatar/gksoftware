@@ -1,5 +1,4 @@
 <template>
-  <h3 class="text-h3">projects</h3>
   <hr class="mt-3 mb-10" />
   <v-row class="d-flex">
     <v-col cols="12" sm="6" md="4" v-for="item of data" :key="item.id">

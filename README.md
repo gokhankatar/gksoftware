@@ -1,4 +1,2 @@
 - navbar responsive yapılacak
 - loading animation
-- kopyalama işini yap ve sağ altta progressing olarak göster
-- proje detay sayfalarındaki resimlerin karanlık mod olanlarını seç
