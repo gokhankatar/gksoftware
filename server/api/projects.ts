@@ -16,6 +16,7 @@ export default eventHandler((event) => {
         "gsap",
         "netlify",
       ],
+      command: "git clone https://github.com/gokhankatar/follow-yourself"
     },
     {
       id: "aksdh9123",
@@ -24,6 +25,7 @@ export default eventHandler((event) => {
         "get-country-desc",
       link: "https://www.getcountry.net/",
       technologies: ["vue", "vue-router", "gsap", "netlify"],
+      command: "git clone https://github.com/gokhankatar/getcountry"
     },
     {
       id: "123jdnsjnjkc",
@@ -43,6 +45,7 @@ export default eventHandler((event) => {
         "firebase",
         "netlify",
       ],
+      command: "SORRY! THIS IS A PRIVATE PROJECT!"
     },
     {
       id: "123jdnsj22d2",
@@ -59,6 +62,7 @@ export default eventHandler((event) => {
         "pinia",
         "firebase",
       ],
+      command:"git clone https://github.com/gokhankatar/crypto-tracker"
     },
     {
       id: "123jdnsjn213ujk",
@@ -74,6 +78,7 @@ export default eventHandler((event) => {
         "momentJs",
         "firebase",
       ],
+      command:"git clone https://github.com/gokhankatar/food-app"
     },
     {
       id: "123jdnsjnjxc",
@@ -89,6 +94,7 @@ export default eventHandler((event) => {
         "axios",
         "firebase",
       ],
+      command:"git clone https://github.com/gokhankatar/blog-app"
     },
     {
       id: "123jdnUUUc",
@@ -106,6 +112,7 @@ export default eventHandler((event) => {
         "axios",
         "vuetify",
       ],
+      command:"git clone https://github.com/gokhankatar/merchantile-app"
     },
     {
       id: "87cnKKNKs",
@@ -121,6 +128,7 @@ export default eventHandler((event) => {
         "vuetify",
         "firebase",
       ],
+      command:"git clone https://github.com/gokhankatar/chat-app"
     },
   ];
 

@@ -31,7 +31,8 @@
         <v-tooltip :text="t('clone')" location="right">
           <template v-slot:activator="{ props }">
             <v-icon
-              class="copy-icon d-none pa-5 transition cursor-pointer rounded-lg"
+              @click="copyToLog(item)"
+              class="copy-icon d-flex d-sm-none pa-5 transition cursor-pointer rounded-lg"
               size="small"
               icon="mdi-content-copy"
               v-bind="props"
@@ -41,8 +42,34 @@
       </v-card>
     </v-col>
   </v-row>
+
+  <div
+    v-if="isCopy"
+    class="loading-line w-80 w-sm-50 w-md-25 d-flex flex-column ga-4 pa-5 bg-teal-darken-4 rounded-lg"
+  >
+    <code>{{ t("copy-message") }}</code>
+    <v-progress-linear color="green-accent-3" indeterminate></v-progress-linear>
+  </div>
 </template>
+
 <script lang="ts" setup>
+import { ref } from "vue";
+
+const isCopy = ref(false);
+
+const copyToLog = async (item: any) => {
+  try {
+    isCopy.value = true;
+    let text = item.command;
+    await navigator.clipboard.writeText(text);
+    setTimeout(() => {
+      isCopy.value = false;
+    }, 3000);
+  } catch (error: any) {
+    console.error(error.message as string);
+  }
+};
+
 const { t } = useI18n();
 useHead({
   title: `GK SOFTWARE | ${t("projects")}`,
@@ -56,6 +83,11 @@ const truncateText = (text: string, length: number) => {
 };
 </script>
 <style scoped>
+.loading-line {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+}
 .card {
   position: relative;
   border: 3px solid #000;
@@ -73,6 +105,7 @@ const truncateText = (text: string, length: number) => {
   position: absolute;
   bottom: 5%;
   left: 2%;
+  z-index: 99;
   border: 1px solid #00e676;
   color: #00e676;
 }
