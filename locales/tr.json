@@ -1,6 +1,6 @@
 {
     "clone": "Bu deponun klonunu oluştur",
-    "copy-message":"Komut kopyalandı!",
+    "copy-message": "Komut kopyalandı!",
     "go-to-project": "Projeye git",
     "home": "Anasayfa",
     "showcase": "Vitrin",
@@ -19,6 +19,14 @@
     "crypto-app": "Kripto Takip Uygulaması",
     "academy": "Kişisel Akademisyen Sitesi",
     "food-app": "Yemekhane Uygulaması",
+    "follow-yourself-short-desc": "Kendi aktivitelerinizi takip etmenizi sağlayan bir web uygulaması.",
+    "get-country-short-desc": "Dünyadaki tüm ülkeler hakkında birçok bilgi içeren bir web uygulaması.",
+    "chat-app-short-desc": "Basit bir sohbet uygulaması.",
+    "blog-app-short-desc": "Basit bir blog uygulaması.",
+    "food-app-short-desc": "Basit bir kafeterya uygulaması.",
+    "merchantile-app-short-desc": "Tam kapsamlı bir ticaret web uygulaması.",
+    "academy-short-desc": "Akademisyenler için tam kapsamlı bir web uygulaması.",
+    "crypto-app-short-desc": "Her kullanıcının istediği kripto parayı izleme listesine ekleyip takip edebileceği bir web uygulaması.",
     "follow-yourself-desc": "Aktivitelerinizi takip etmenizi sağlayan bir web uygulaması.",
     "get-country-desc": "Dünyadaki tüm ülkeler hakkında birçok bilgi içeren bir web uygulaması.",
     "chat-app-desc": "Temel bir sohbet uygulaması.",
@@ -26,5 +34,6 @@
     "food-app-desc": "Temel bir kafeterya uygulaması.",
     "merchantile-app-desc": "Ön ve arka uç ile geliştirilen bir ticaret uygulaması. Otomatik çıkış. Ürün ekleme/silme/güncelleme. Ürünlerinizi kaydedebilir, favori olarak işaretleyebilir veya satıldı olarak işaretleyebilirsiniz ve ilgili sayfalarda gösterebilirsiniz. Aynı zamanda satılan ürünlerinizin toplamı ve toplam kazancınız, satılmış ürünler sayfanızda gösterilecektir. Ürünleri ilgili kategorilerden görüntüleyebilir ve platforma yüklediğiniz ürünleri 'Ürünlerim' sayfanızda birlikte görüntüleyebilirsiniz.",
     "academy-desc": "Bir akademisyenin çalışmaları, blog yazıları, CV gibi birçok etkinliğini paylaşabileceği, ekleyebileceği, silebileceği ve güncelleyebileceği bir tam yığın web uygulaması. Sadece yönetici paneli arayüzüne giriş yaparak bu işlemleri yapabilir. İsteğe bağlı olarak yapılmıştır.",
-    "crypto-app-desc": "Her kullanıcının izleme listesine ekleyip takip edebileceği herhangi bir kripto para birimini ekleyip takip edebileceği bir web uygulaması."
+    "crypto-app-desc": "Her kullanıcının izleme listesine ekleyip takip edebileceği herhangi bir kripto para birimini ekleyip takip edebileceği bir web uygulaması.",
+    "see-now": "Şimdi Gör"
 }

@@ -1,6 +1,6 @@
 {
     "clone": "Clone this repostory",
-    "copy-message":"Copied command!",
+    "copy-message": "Copied command!",
     "go-to-project": "Go to project",
     "home": "Home",
     "showcase": "Showcase",
@@ -19,6 +19,14 @@
     "crypto-app": "Crypto Tracker",
     "academy": "Personal Academician Site",
     "food-app": "Food App",
+    "follow-yourself-short-desc": "A web application that allows you to track your activities.",
+    "get-country-short-desc": "A web application that contains a lot of information about all countries in the world.",
+    "chat-app-short-desc": "A basic chat application.",
+    "blog-app-short-desc": "A simple blog application.",
+    "food-app-short-desc": "A basic cafeteria application.",
+    "merchantile-app-short-desc": "Full stack trading web app.",
+    "academy-short-desc": "It is a full stack web application for academician.",
+    "crypto-app-short-desc": "A web application where every user can add and track any cryptocurrency they want to their watchlist.",
     "follow-yourself-desc": "A web application that allows you to track your activities.",
     "get-country-desc": "A web application that contains a lot of information about all countries in the world.",
     "chat-app-desc": "A basic chat application.",
@@ -26,5 +34,6 @@
     "food-app-desc": "A basic cafeteria application.",
     "merchantile-app-desc": "It is a trading application developed with front-end and back-end. Auto logout. Add/delete/update product. You can save your products, favorite them or mark them as sold and display them on your relevant pages. At the same time, the total of your sold products and your total earnings will be displayed on your sold page. View products from relevant categories. View the products you have uploaded to the platform together on your 'My Products' page.",
     "academy-desc": "It is a full stack web application where an academic can share, add, delete and update many of his/her activities such as his/her studies, blog posts, CV. He/she can do these only by logging into the admin panel interface. It is made upon request.",
-    "crypto-app-desc": "A web application where every user can add and track any cryptocurrency they want to their watchlist."
+    "crypto-app-desc": "A web application where every user can add and track any cryptocurrency they want to their watchlist.",
+    "see-now":"See Now"
 }
