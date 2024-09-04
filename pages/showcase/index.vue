@@ -123,17 +123,14 @@
   </div>
 </template>
 <script lang="ts" setup>
-import followYourself from "~/assets/img/follow-yourself-1.png";
-import followYourself2 from "~/assets/img/follow-yourself2.png";
-import academy from "~/assets/img/academy1.png";
-import academy2 from "~/assets/img/academy2.png";
-import getCountry from "~/assets/img/get-country1.png";
-import getCountry2 from "~/assets/img/get-country2.png";
-import merchantile from "~/assets/img/merchantile.png";
-import chat from "~/assets/img/chat.png";
-import food from "~/assets/img/food.png";
-import crypto from "~/assets/img/crypto.png";
-import blog from "~/assets/img/blog2.png";
+import followYourselfBig from "~/assets/img/follow-yourself-big.png";
+import academyBig from "~/assets/img/academyBig.png";
+import getCountryBig from "~/assets/img/get-country-big.png";
+import merchantileBig from "~/assets/img/merchantileBig.png";
+import chatBig from "~/assets/img/chatBig.png";
+import foodBig from "~/assets/img/foodBig.png";
+import cryptoBig from "~/assets/img/cryptoBig.png";
+import blogBig from "~/assets/img/blogBig.png";
 
 const { t } = useI18n();
 
@@ -145,49 +142,49 @@ const slides = [
   {
     title: t("follow-yourself"),
     description: t("follow-yourself-short-desc"),
-    img: followYourself,
+    img: followYourselfBig,
     link: "https://followyourself.net/",
   },
   {
     title: t("academy"),
     description: t("academy-short-desc"),
-    img: academy,
+    img: academyBig,
     link: "https://esrefugurcelik.com/",
   },
   {
     title: t("get-country"),
     description: t("get-country-short-desc"),
-    img: getCountry,
+    img: getCountryBig,
     link: "https://www.getcountry.net/",
   },
   {
     title: t("merchantile-app"),
     description: t("merchantile-app-short-desc"),
-    img: merchantile,
+    img: merchantileBig,
     link: "https://github.com/gokhankatar/merchantile-app",
   },
   {
     title: t("crypto-app"),
     description: t("crypto-app-short-desc"),
-    img: crypto,
+    img: cryptoBig,
     link: "https://github.com/gokhankatar/crypto-tracker",
   },
   {
     title: t("food-app"),
     description: t("food-app-short-desc"),
-    img: food,
+    img: foodBig,
     link: "https://github.com/gokhankatar/food-app",
   },
   {
     title: t("blog-app"),
     description: t("blog-app-short-desc"),
-    img: blog,
+    img: blogBig,
     link: "https://github.com/gokhankatar/blog-app",
   },
   {
     title: t("chat-app"),
     description: t("chat-app-short-desc"),
-    img: chat,
+    img: chatBig,
     link: "https://github.com/gokhankatar/chat-app",
   },
 ];

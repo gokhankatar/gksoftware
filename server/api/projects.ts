@@ -15,6 +15,7 @@ export default eventHandler((event) => {
         "vuex",
         "gsap",
         "netlify",
+        "aws"
       ],
       command: "git clone https://github.com/gokhankatar/follow-yourself"
     },
@@ -62,7 +63,7 @@ export default eventHandler((event) => {
         "pinia",
         "firebase",
       ],
-      command:"git clone https://github.com/gokhankatar/crypto-tracker"
+      command: "git clone https://github.com/gokhankatar/crypto-tracker"
     },
     {
       id: "123jdnsjn213ujk",
@@ -78,7 +79,7 @@ export default eventHandler((event) => {
         "momentJs",
         "firebase",
       ],
-      command:"git clone https://github.com/gokhankatar/food-app"
+      command: "git clone https://github.com/gokhankatar/food-app"
     },
     {
       id: "123jdnsjnjxc",
@@ -94,7 +95,7 @@ export default eventHandler((event) => {
         "axios",
         "firebase",
       ],
-      command:"git clone https://github.com/gokhankatar/blog-app"
+      command: "git clone https://github.com/gokhankatar/blog-app"
     },
     {
       id: "123jdnUUUc",
@@ -112,7 +113,7 @@ export default eventHandler((event) => {
         "axios",
         "vuetify",
       ],
-      command:"git clone https://github.com/gokhankatar/merchantile-app"
+      command: "git clone https://github.com/gokhankatar/merchantile-app"
     },
     {
       id: "87cnKKNKs",
@@ -128,7 +129,7 @@ export default eventHandler((event) => {
         "vuetify",
         "firebase",
       ],
-      command:"git clone https://github.com/gokhankatar/chat-app"
+      command: "git clone https://github.com/gokhankatar/chat-app"
     },
   ];
 
