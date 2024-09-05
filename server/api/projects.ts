@@ -49,6 +49,23 @@ export default eventHandler((event) => {
       command: "SORRY! THIS IS A PRIVATE PROJECT!"
     },
     {
+      id: "123jdnsjnj123",
+      title: "gksoftware",
+      description:
+        "gksoftware-desc",
+      link: "https://gksoftware.net/",
+      technologies: [
+        "vue",
+        "vite",
+        "nuxt",
+        "vuetify",
+        "swiper",
+        "i18n",
+        "vercel",
+      ],
+      command: "git clone https://github.com/gokhankatar/gksoftware"
+    },
+    {
       id: "123jdnsj22d2",
       title: "crypto-app",
       description:

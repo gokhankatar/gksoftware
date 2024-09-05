@@ -1,5 +1,5 @@
 <template>
-  <!-- First Slider -->
+  <!-- effectFade -->
   <div class="slide-container">
     <div
       class="custom-swiper-button-prev rounded-lg d-flex justify-center align-center cursor-pointer transition"
@@ -79,11 +79,11 @@
   </div>
 
   <v-responsive class="my-15" />
-  <v-responsive class="my-15" />
-  <v-responsive class="my-15" />
-  <v-responsive class="my-10" />
+  <v-responsive class="my-15 d-none d-sm-flex" />
+  <v-responsive class="my-15 d-none d-sm-flex" />
+  <v-responsive class="my-10 d-none d-sm-flex" />
 
-  <!-- effectCoverflow -->
+  <!-- effectCoverflow (feature) -->
   <v-row class="d-flex justify-space-between align-center">
     <v-col
       cols="12"
@@ -99,16 +99,9 @@
     </v-col>
     <v-col cols="12" sm="12" lg="8">
       <Swiper
-        :modules="[
-          SwiperEffectFade,
-          SwiperPagination,
-          SwiperNavigation,
-          SwiperEffectCoverflow,
-          SwiperAutoplay,
-        ]"
+        :modules="[SwiperPagination, SwiperEffectCoverflow, SwiperAutoplay]"
         :effect="'coverflow'"
         :grab-cursor="true"
-        :navigation="true"
         :spaceBetween="10"
         :loop="true"
         :autoplay="{
@@ -133,7 +126,7 @@
           },
         }"
       >
-        <SwiperSlide class="swiper-slide" v-for="item of slides">
+        <SwiperSlide class="swiper-slide" v-for="item of slidesFeatures">
           <v-img
             class="rounded-xl"
             :src="item.img"
@@ -142,7 +135,9 @@
             cover
           />
           <div class="desc d-flex flex-column ga-2 justify-center align-center">
-            <p class="feature text-white text-subtitle-1 text-sm-h5 text-grey-lighten-4 rounded-lg pa-3">
+            <p
+              class="feature text-white text-subtitle-1 text-sm-h5 text-grey-lighten-4 rounded-lg pa-3"
+            >
               {{ item.feature }}
             </p>
           </div>
@@ -152,11 +147,11 @@
   </v-row>
 
   <v-responsive class="my-15" />
-  <v-responsive class="my-15" />
-  <v-responsive class="my-15" />
-  <v-responsive class="my-10" />
+  <v-responsive class="my-15 d-none d-sm-flex" />
+  <v-responsive class="my-15 d-none d-sm-flex" />
+  <v-responsive class="my-10 d-none d-sm-flex" />
 
-  <!-- effectCube -->
+  <!-- effectCube (difference) -->
   <v-row class="d-flex flex-row-reverse justify-space-between align-center">
     <v-col
       cols="12"
@@ -171,7 +166,6 @@
       </p>
     </v-col>
     <v-col cols="12" sm="12" lg="8">
-      <!-- Second Slider -->
       <Swiper
         :modules="[SwiperPagination, SwiperEffectCube, SwiperAutoplay]"
         :effect="'cube'"
@@ -192,10 +186,17 @@
           clickable: true,
         }"
       >
-        <SwiperSlide class="swiper-slide" v-for="item of slides">
+        <SwiperSlide class="swiper-slide" v-for="item of slidesDifference">
           <v-img
-            class="rounded-xl"
+            class="rounded-xl d-none d-sm-flex"
             :src="item.img"
+            height="30vh"
+            :aspect-ratio="16 / 9"
+            cover
+          />
+          <v-img
+            class="rounded-xl d-flex d-sm-none"
+            :src="item.smallImg"
             height="30vh"
             :aspect-ratio="16 / 9"
             cover
@@ -213,11 +214,11 @@
   </v-row>
 
   <v-responsive class="my-15" />
-  <v-responsive class="my-15" />
-  <v-responsive class="my-15" />
-  <v-responsive class="my-10" />
+  <v-responsive class="my-15 d-none d-sm-flex" />
+  <v-responsive class="my-15 d-none d-sm-flex" />
+  <v-responsive class="my-10 d-none d-sm-flex" />
 
-  <!-- effectCards -->
+  <!-- effectCards (tech) -->
   <v-row class="d-flex justify-space-between align-center">
     <v-col
       cols="12"
@@ -232,7 +233,6 @@
       </p>
     </v-col>
     <v-col cols="12" sm="12" lg="8">
-      <!-- Second Slider -->
       <Swiper
         :modules="[SwiperEffectCards, SwiperAutoplay]"
         :effect="'cards'"
@@ -244,10 +244,17 @@
           disableOnInteraction: false,
         }"
       >
-        <SwiperSlide class="swiper-slide" v-for="item of slides">
+        <SwiperSlide class="swiper-slide" v-for="item of slidesTech">
           <v-img
-            class="rounded-xl"
+            class="rounded-xl d-none d-sm-flex"
             :src="item.img"
+            height="30vh"
+            :aspect-ratio="16 / 9"
+            cover
+          />
+          <v-img
+            class="rounded-xl d-flex d-sm-none"
+            :src="item.imgSmall"
             height="30vh"
             :aspect-ratio="16 / 9"
             cover
@@ -264,10 +271,10 @@
     </v-col>
   </v-row>
 
-  <v-responsive class="my-15" />
-  <v-responsive class="my-15" />
-  <v-responsive class="my-15" />
-  <v-responsive class="my-10" />
+  <v-responsive class="my-15 d-none d-sm-flex" />
+  <v-responsive class="my-15 d-none d-sm-flex" />
+  <v-responsive class="my-15 d-none d-sm-flex" />
+  <v-responsive class="my-10 d-none d-sm-flex" />
 </template>
 
 <script lang="ts" setup>
@@ -288,6 +295,31 @@ import foodSmall from "~/assets/img/foodSmall.png";
 import cryptoSmall from "~/assets/img/cryptoSmall.png";
 import blogSmall from "~/assets/img/blogSmall.png";
 
+
+import followYourselfFeature from "~/assets/img/followYourselfFeature.png";
+import academyFeature from "~/assets/img/academyFeature.png";
+import featureAnother from "~/assets/img/featureAnother.png";
+import getCountryFeature from "~/assets/img/getCountryFeature.png";
+import blogFeature from "~/assets/img/blogFeature.png";
+
+import blogDifBig from "~/assets/img/blogDifbig.png";
+import blogDifSmall from "~/assets/img/blogDifSmall.png";
+import chatDifBig from "~/assets/img/chatDifBig.png";
+import chatDifSmall from "~/assets/img/chatDifSmall.png";
+import cryptoDifBig from "~/assets/img/cryptoDifBig.png";
+import cryptoDifSmall from "~/assets/img/cryptoDifSmall.png";
+import foodDifBig from "~/assets/img/foodDifBig.png";
+import foodDifSmall from "~/assets/img/foodDifSmall.png";
+
+import academyTechBig from "~/assets/img/academyTechBig.png";
+import academySmallTech from "~/assets/img/academySmallTech.png";
+import getCountryTechBig from "~/assets/img/getCountrytechBig.png";
+import getCountrySmallTech from "~/assets/img/getCountrySmallTech.png";
+import followYourselfTechBig from "~/assets/img/followYourselftechBig.png";
+import followYourselfSmallTech from "~/assets/img/followYourselfSmallTech.png";
+import merchantileTechBig from "~/assets/img/merchantileTechBig.png";
+import merchantileSmallTech from "~/assets/img/merhcantileSmalltech.png";
+
 const { t } = useI18n();
 
 useHead({
@@ -301,9 +333,6 @@ const slides = [
     img: followYourselfBig,
     smallImg: followYourselfSmall,
     link: "https://followyourself.net/",
-    feature: t("practical"),
-    difference: t("data-exc"),
-    technology: t("ssr"),
   },
   {
     title: t("academy"),
@@ -311,9 +340,6 @@ const slides = [
     img: academyBig,
     smallImg: academySmall,
     link: "https://esrefugurcelik.com/",
-    feature: t("safe"),
-    difference: t("performance"),
-    technology: t("spa"),
   },
   {
     title: t("get-country"),
@@ -321,9 +347,6 @@ const slides = [
     img: getCountryBig,
     smallImg: getCountrySmall,
     link: "https://www.getcountry.net/",
-    feature: t("informative"),
-    difference: t("interaction"),
-    technology: t("paas"),
   },
   {
     title: t("merchantile-app"),
@@ -331,9 +354,6 @@ const slides = [
     img: merchantileBig,
     smallImg: merchantileSmall,
     link: "https://github.com/gokhankatar/merchantile-app",
-    feature: t("versatile"),
-    difference: t("update"),
-    technology: t("saas"),
   },
   {
     title: t("crypto-app"),
@@ -341,9 +361,6 @@ const slides = [
     img: cryptoBig,
     smallImg: cryptoSmall,
     link: "https://github.com/gokhankatar/crypto-tracker",
-    feature: t("ui-ux"),
-    difference: t("data-exc"),
-    technology: t("ssr"),
   },
   {
     title: t("food-app"),
@@ -351,9 +368,6 @@ const slides = [
     img: foodBig,
     smallImg: foodSmall,
     link: "https://github.com/gokhankatar/food-app",
-    feature: t("customizable"),
-    difference: t("data-exc"),
-    technology: t("ssr"),
   },
   {
     title: t("blog-app"),
@@ -361,9 +375,6 @@ const slides = [
     img: blogBig,
     smallImg: blogSmall,
     link: "https://github.com/gokhankatar/blog-app",
-    feature: t("fast"),
-    difference: t("data-exc"),
-    technology: t("ssr"),
   },
   {
     title: t("chat-app"),
@@ -371,9 +382,75 @@ const slides = [
     img: chatBig,
     smallImg: chatSmall,
     link: "https://github.com/gokhankatar/chat-app",
+  },
+];
+
+const slidesFeatures = [
+  {
+    feature: t("practical"),
+    img: followYourselfFeature,
+  },
+  {
+    feature: t("customizable"),
+    img: academyFeature,
+  },
+  {
+    feature: t("informative"),
+    img: getCountryFeature,
+  },
+  {
+    feature: t("fast"),
+    img: featureAnother,
+  },
+  {
     feature: t("new-tech"),
+    img: blogFeature,
+  },
+];
+
+const slidesDifference = [
+  {
     difference: t("data-exc"),
+    img: cryptoDifBig,
+    smallImg: cryptoDifSmall,
+  },
+  {
+    difference: t("update"),
+    img: chatDifBig,
+    smallImg: chatDifSmall,
+  },
+  {
+    difference: t("interaction"),
+    img: foodDifBig,
+    smallImg: foodDifSmall,
+  },
+  {
+    difference: t("performance"),
+    img: blogDifBig,
+    smallImg: blogDifSmall,
+  },
+];
+
+const slidesTech = [
+  {
+    technology: t("saas"),
+    imgSmall: followYourselfSmallTech,
+    img: followYourselfTechBig,
+  },
+  {
     technology: t("ssr"),
+    imgSmall: getCountrySmallTech,
+    img: getCountryTechBig,
+  },
+  {
+    technology: t("paas"),
+    imgSmall: academySmallTech,
+    img: academyTechBig,
+  },
+  {
+    technology: t("spa"),
+    imgSmall: merchantileSmallTech,
+    img: merchantileTechBig,
   },
 ];
 </script>
@@ -401,7 +478,7 @@ const slides = [
   position: absolute;
   bottom: 10%;
   z-index: 999;
-  background-color: rgba(0, 255, 0, 0.3)
+  background-color: rgba(0, 255, 0, 0.3);
 }
 .title {
   background-color: rgba(255, 255, 255, 0.3);

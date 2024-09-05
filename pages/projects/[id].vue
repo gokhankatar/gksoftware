@@ -52,10 +52,11 @@
 </template>
 
 <script lang="ts" setup>
-import followYourself from "~/assets/img/follow-yourself-1.png";
-import academy from "~/assets/img/academy1.png";
-import getCountry from "~/assets/img/get-country1.png";
+import followYourself from "~/assets/img/followYourself.png";
+import academy from "~/assets/img/academy.png";
+import getCountry from "~/assets/img/getCountry.png";
 import blog from "~/assets/img/blog.png";
+import gksoftware from "~/assets/img/gksoftware.png";
 import chat from "~/assets/img/chat.png";
 import merchantile from "~/assets/img/merchantile.png";
 import crypto from "~/assets/img/crypto.png";
@@ -82,6 +83,8 @@ const getImg = (name: string) => {
     return merchantile;
   } else if (name === "chat-app") {
     return chat;
+  } else if (name === "gksoftware") {
+    return gksoftware;
   } else {
     return error;
   }
