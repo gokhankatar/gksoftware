@@ -80,8 +80,8 @@
 
   <v-responsive class="my-15" />
   <v-responsive class="my-15 d-none d-sm-flex" />
-  <v-responsive class="my-15 d-none d-sm-flex" />
-  <v-responsive class="my-10 d-none d-sm-flex" />
+  <v-responsive class="my-15 d-none d-lg-flex" />
+  <v-responsive class="my-10 d-none d-lg-flex" />
 
   <!-- effectCoverflow (feature) -->
   <v-row class="d-flex justify-space-between align-center">
@@ -91,7 +91,7 @@
       lg="3"
       class="d-flex flex-column align-center align-md-start ga-5"
     >
-      <h3 class="text-subtitle-1 text-md-h4">{{ t("why-web-header") }}</h3>
+      <h3 class="text-subtitle-1 text-lg-h4">{{ t("why-web-header") }}</h3>
       <hr class="w-75 w-sm-25" color="green-accent-3" />
       <p class="text-subtitle-2 mt-5 text-md-subtitle-1 text-center text-md-start">
         {{ t("why-web") }}
@@ -148,8 +148,8 @@
 
   <v-responsive class="my-15" />
   <v-responsive class="my-15 d-none d-sm-flex" />
-  <v-responsive class="my-15 d-none d-sm-flex" />
-  <v-responsive class="my-10 d-none d-sm-flex" />
+  <v-responsive class="my-15 d-none d-lg-flex" />
+  <v-responsive class="my-10 d-none d-lg-flex" />
 
   <!-- effectCube (difference) -->
   <v-row class="d-flex flex-row-reverse justify-space-between align-center">
@@ -159,7 +159,7 @@
       lg="3"
       class="d-flex flex-column align-center align-md-start ga-5"
     >
-      <h3 class="text-subtitle-1 text-md-h4">{{ t("web-app-website-header") }}</h3>
+      <h3 class="text-subtitle-1 text-lg-h4">{{ t("web-app-website-header") }}</h3>
       <hr class="w-75 w-sm-25" color="green-accent-3" />
       <p class="text-subtitle-2 mt-5 text-md-subtitle-1 text-center text-md-start">
         {{ t("web-app-website") }}
@@ -215,8 +215,8 @@
 
   <v-responsive class="my-15" />
   <v-responsive class="my-15 d-none d-sm-flex" />
-  <v-responsive class="my-15 d-none d-sm-flex" />
-  <v-responsive class="my-10 d-none d-sm-flex" />
+  <v-responsive class="my-15 d-none d-lg-flex" />
+  <v-responsive class="my-10 d-none d-lg-flex" />
 
   <!-- effectCards (tech) -->
   <v-row class="d-flex justify-space-between align-center">
@@ -226,7 +226,7 @@
       lg="3"
       class="d-flex flex-column align-center align-md-start ga-5"
     >
-      <h3 class="text-subtitle-1 text-md-h4">{{ t("why-new-tech-header") }}</h3>
+      <h3 class="text-subtitle-1 text-lg-h4">{{ t("why-new-tech-header") }}</h3>
       <hr class="w-75 w-sm-25" color="green-accent-3" />
       <p class="text-subtitle-2 mt-5 text-md-subtitle-1 text-center text-md-start">
         {{ t("why-new-tech") }}
@@ -273,8 +273,8 @@
 
   <v-responsive class="my-15 d-none d-sm-flex" />
   <v-responsive class="my-15 d-none d-sm-flex" />
-  <v-responsive class="my-15 d-none d-sm-flex" />
-  <v-responsive class="my-10 d-none d-sm-flex" />
+  <v-responsive class="my-15 d-none d-lg-flex" />
+  <v-responsive class="my-10 d-none d-lg-flex" />
 </template>
 
 <script lang="ts" setup>
