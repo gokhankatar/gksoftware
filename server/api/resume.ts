@@ -2,7 +2,6 @@ export default eventHandler((event) => {
   const cv = {
     general: {
       name: "Gokhan Katar",
-      title: "Front End Developer",
       email: "katar_gokhan@hotmail.com",
     },
     education: [
@@ -39,6 +38,7 @@ export default eventHandler((event) => {
       "Javascript",
       "Typescript",
       "VueJs",
+      "Vuetify",
       "ViteJs",
       "Vue-Router",
       "Vuex",
@@ -50,13 +50,13 @@ export default eventHandler((event) => {
       "MacOS",
       "Git",
       "Github",
-      "Vuetify",
       "Gsap",
       "i18n",
       "Bootstrap",
       "Webpack",
       "Axios API",
       "AJAX",
+      "Seo",
       "Fetch API",
       "Rest API",
       "SwiperJs",
