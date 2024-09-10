@@ -7,7 +7,12 @@
         height="230"
       >
         <v-card-title>{{ t(item.title) }}</v-card-title>
-        <v-card-text>{{ truncateText(t(item.description), 250) }}</v-card-text>
+        <v-card-text class="d-none d-sm-flex">{{
+          truncateText(t(item.description), 250)
+        }}</v-card-text>
+        <v-card-text class="d-flex d-sm-none">{{
+          truncateText(t(item.description), 100)
+        }}</v-card-text>
         <v-tooltip :text="t('go-to-project')" location="left">
           <template v-slot:activator="{ props }">
             <NuxtLinkLocale

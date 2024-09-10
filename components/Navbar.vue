@@ -120,9 +120,10 @@
   </v-app-bar>
 
   <v-navigation-drawer
-    class="nav-drawer pa-10 d-flex d-sm-none"
+    class="nav-drawer pa-10 d-flex d-sm-none rounded-lg"
     v-model="isOpenDrawer"
     location="right"
+    temporary
   >
     <template v-slot:prepend>
       <div class="d-flex flex-column justify-start align-center ga-5">

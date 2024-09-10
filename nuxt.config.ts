@@ -44,7 +44,7 @@ export default defineNuxtConfig({
         {
           rel: "icon",
           type: 'image/x-icon',
-          href: "/public/favicon.ico"
+          href: "/favicon.ico"
         }
       ]
     }
