@@ -26,7 +26,7 @@
       <p class="transition text-h5 text-md-h3">{{ t("education") }}</p>
     </div>
 
-    <hr class="line transition w-25 mx-auto mx-sm-0" />
+    <hr class="line transition w-50 w-sm-25 mx-auto mx-sm-0" />
 
     <div v-for="item of data?.education" :key="item.degree"
       class="d-flex justify-center justify-sm-start align-center ga-2">
@@ -51,7 +51,7 @@
       <p class="transition text-h5 text-md-h3">{{ t("projects") }}</p>
     </div>
 
-    <hr class="line transition w-25 mx-auto mx-sm-0" />
+    <hr class="line transition w-50 w-sm-25 mx-auto mx-sm-0" />
 
     <div v-for="item of data?.projetcs" :key="item.link"
       class="d-flex justify-center justify-sm-start align-center ga-2">
@@ -68,7 +68,7 @@
       <p class="transition text-h5 text-md-h3">{{ t("certificates") }}</p>
     </div>
 
-    <hr class="line transition w-25 mx-auto mx-sm-0" />
+    <hr class="line transition w-50 w-sm-25 mx-auto mx-sm-0" />
 
     <div v-for="item of data?.certificates" :key="item.name"
       class="d-flex justify-center justify-sm-start align-center ga-2">
@@ -83,7 +83,7 @@
       <p class="transition text-h5 text-md-h3">{{ t("experiences") }}</p>
     </div>
 
-    <hr class="line transition w-25 mx-auto mx-sm-0" />
+    <hr class="line transition w-50 w-sm-25 mx-auto mx-sm-0" />
 
     <div v-for="item of data?.experiences" :key="item.experience"
       class="d-flex justify-center justify-sm-start align-center ga-2">
@@ -100,7 +100,7 @@
       <p class="transition text-h5 text-md-h3">{{ t("skills") }}</p>
     </div>
 
-    <hr class="line transition w-25 mx-auto mx-sm-0" />
+    <hr class="line transition w-50 w-sm-25 mx-auto mx-sm-0" />
 
     <div class="d-flex flex-wrap justify-center justify-sm-start ga-2">
       <v-chip v-for="item of data?.skills" :key="item" class="skill transition cursor-pointer" variant="outlined"
@@ -114,7 +114,7 @@
       <p class="transition text-h5 text-md-h3">{{ t("what-next") }}</p>
     </div>
 
-    <hr class="line transition w-25 mx-auto mx-sm-0" />
+    <hr class="line transition w-50 w-sm-25 mx-auto mx-sm-0" />
 
     <div class="d-flex flex-wrap justify-center justify-sm-start ga-2">
       <v-chip v-for="item of data?.whatNext" :key="item" class="skill-next transition cursor-pointer" variant="outlined"

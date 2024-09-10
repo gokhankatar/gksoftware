@@ -2,8 +2,7 @@
 - GKSOFTWARE yazısı animasyonlu olacak
 
 # Navbar
-- navbar responsive yapılacak
-- beyaz renge gectıgındeki logo rengi degisecek
+- Sag tarafta takılı kalıyor nav drawer
 
 # Preview
 - loading animation

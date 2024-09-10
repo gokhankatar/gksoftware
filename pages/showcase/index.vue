@@ -38,6 +38,8 @@
       :pagination="{
         clickable: true,
       }"
+      :observer="true"
+      :observe-parents="true"
     >
       <SwiperSlide class="swiper-slide" v-for="item of slides">
         <v-img
@@ -107,6 +109,13 @@
         :autoplay="{
           delay: 4000,
           disableOnInteraction: false,
+        }"
+        :coverflowEffect="{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
         }"
         :pagination="{
           clickable: true,
@@ -294,7 +303,6 @@ import chatSmall from "~/assets/img/chatSmall.png";
 import foodSmall from "~/assets/img/foodSmall.png";
 import cryptoSmall from "~/assets/img/cryptoSmall.png";
 import blogSmall from "~/assets/img/blogSmall.png";
-
 
 import followYourselfFeature from "~/assets/img/followYourselfFeature.png";
 import academyFeature from "~/assets/img/academyFeature.png";

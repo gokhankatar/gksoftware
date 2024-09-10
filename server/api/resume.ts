@@ -65,7 +65,7 @@ export default eventHandler((event) => {
       "SaaS",
       "PaaS",
     ],
-    whatNext: ["NodeJs", "MySql", "Linux", "Swift"],
+    whatNext: ["NodeJs", "MySql", "Linux", "Swift", "Docker"],
   };
 
   return cv;

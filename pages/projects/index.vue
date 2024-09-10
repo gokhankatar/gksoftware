@@ -93,7 +93,6 @@ const truncateText = (text: string, length: number) => {
 }
 
 .card:hover {
-  background-color: rgba(255, 255, 255, 0.2);
   border-color: #469e49;
 }
 .card:hover .link {
