@@ -15,6 +15,7 @@
     />
   </div>
 </template>
+
 <script lang="ts" setup>
 import bgVideo from "~/assets/videos/bg-general.mp4";
 import bgAudio from "~/assets/sounds/bg-sound.mp3";
@@ -48,6 +49,7 @@ onMounted(() => {
   });
 });
 </script>
+
 <style scoped>
 @import url("/assets/css/main.css");
 
@@ -65,6 +67,7 @@ onMounted(() => {
   -webkit-transform-style: preserve-3d;
   -webkit-perspective: 8rem;
 }
+
 #txt > b {
   box-shadow: 0 0.4rem 0.3rem -0.3rem #fff;
   color: #fff;
@@ -78,6 +81,7 @@ onMounted(() => {
   -webkit-transform: rotateX(-85deg);
   animation: getUp 8s infinite;
 }
+
 #txt > b:nth-child(2) {
   animation-delay: 0.25s;
 }
@@ -102,20 +106,9 @@ onMounted(() => {
 #txt > b:nth-child(9) {
   animation-delay: 1.85s;
 }
+
 #txt > b:nth-child(10) {
   animation-delay: 1.95s;
-}
-
-@keyframes getUp {
-  10%,
-  50% {
-    transform: rotateX(0);
-  }
-  0%,
-  60%,
-  100% {
-    transform: rotateX(-85deg);
-  }
 }
 
 .video-background {
@@ -133,15 +126,7 @@ onMounted(() => {
   height: 100%;
   object-fit: cover;
 }
-.big-header {
-  font-weight: bold;
-  letter-spacing: 0.1rem !important;
-  text-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.1);
-  position: relative;
-  animation-name: text;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-}
+
 .content {
   position: absolute;
   top: 50%;
@@ -150,6 +135,7 @@ onMounted(() => {
   z-index: 3;
   color: white;
 }
+
 .sound-icon {
   position: absolute;
   bottom: 5%;
@@ -157,26 +143,21 @@ onMounted(() => {
   border: 1px solid #616161;
   color: #616161;
 }
+
 .sound-icon:hover {
   border-color: #fff;
   color: #fff;
 }
 
-@keyframes text {
-  0% {
-    color: #2d232c;
-    margin-bottom: -40px;
+@keyframes getUp {
+  10%,
+  50% {
+    transform: rotateX(0);
   }
-  30% {
-    letter-spacing: 25px;
-    margin-bottom: -40px;
-  }
-  85% {
-    letter-spacing: 8px;
-    margin-bottom: -40px;
-  }
+  0%,
+  60%,
   100% {
-    margin-bottom: 20px;
+    transform: rotateX(-85deg);
   }
 }
 </style>
