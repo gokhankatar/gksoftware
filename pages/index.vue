@@ -4,10 +4,9 @@
       <source :src="bgVideo" type="video/mp4" />
     </video>
     <div class="content d-flex flex-column ga-1 ga-sm-2">
-      <h1 class="big-header text-h5 text-sm-h3 text-md-h1">GK SOFTWARE</h1>
-      <h3 class="text-caption text-sm-subtitle-1 text-center text-sm-end">
-        Web Applications
-      </h3>
+      <div class="txt text-h4 text-md-h1" id="txt">
+        <b>G</b><b>K</b><b>S</b><b>O</b><b>F</b><b>T</b><b>W</b><b>A</b><b>R</b><b>E</b>
+      </div>
     </div>
     <v-icon
       class="sound-icon pa-5 rounded-xl transition-lg cursor-pointer"
@@ -52,6 +51,73 @@ onMounted(() => {
 <style scoped>
 @import url("/assets/css/main.css");
 
+#txt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  font-family: sans-serif;
+  letter-spacing: 3.5px;
+  font-weight: 700;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 8rem;
+  -webkit-transform-style: preserve-3d;
+  -webkit-perspective: 8rem;
+}
+#txt > b {
+  box-shadow: 0 0.4rem 0.3rem -0.3rem #fff;
+  color: #fff;
+  background: linear-gradient(#aaf, #acf, #afc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform-origin: bottom;
+  transform: rotateX(-85deg);
+  -webkit-transform-origin: bottom;
+  -webkit-transform: rotateX(-85deg);
+  animation: getUp 8s infinite;
+}
+#txt > b:nth-child(2) {
+  animation-delay: 0.25s;
+}
+#txt > b:nth-child(3) {
+  animation-delay: 0.5s;
+}
+#txt > b:nth-child(4) {
+  animation-delay: 0.75s;
+}
+#txt > b:nth-child(5) {
+  animation-delay: 1s;
+}
+#txt > b:nth-child(6) {
+  animation-delay: 1.25s;
+}
+#txt > b:nth-child(7) {
+  animation-delay: 1.5s;
+}
+#txt > b:nth-child(8) {
+  animation-delay: 1.75s;
+}
+#txt > b:nth-child(9) {
+  animation-delay: 1.85s;
+}
+#txt > b:nth-child(10) {
+  animation-delay: 1.95s;
+}
+
+@keyframes getUp {
+  10%,
+  50% {
+    transform: rotateX(0);
+  }
+  0%,
+  60%,
+  100% {
+    transform: rotateX(-85deg);
+  }
+}
+
 .video-background {
   position: fixed;
   top: 0;
@@ -71,6 +137,10 @@ onMounted(() => {
   font-weight: bold;
   letter-spacing: 0.1rem !important;
   text-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.1);
+  position: relative;
+  animation-name: text;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 .content {
   position: absolute;
@@ -90,5 +160,23 @@ onMounted(() => {
 .sound-icon:hover {
   border-color: #fff;
   color: #fff;
+}
+
+@keyframes text {
+  0% {
+    color: #2d232c;
+    margin-bottom: -40px;
+  }
+  30% {
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+  }
+  85% {
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+  100% {
+    margin-bottom: 20px;
+  }
 }
 </style>
