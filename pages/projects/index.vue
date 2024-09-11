@@ -5,8 +5,17 @@
       <v-card
         class="card cursor-pointer transition d-flex flex-column align-start ga-2 pa-2 rounded-lg"
         height="230"
+        :to="{
+          path: `/projects/${item.id}`,
+          query: {
+            title: item.title,
+            description: item.description,
+            link: item.link,
+            technologies: item.technologies,
+          },
+        }"
       >
-        <v-card-title>{{ t(item.title) }}</v-card-title>
+        <v-card-title class="project-title">{{ t(item.title) }}</v-card-title>
         <v-card-text class="d-none d-sm-flex">{{
           truncateText(t(item.description), 250)
         }}</v-card-text>
@@ -98,12 +107,18 @@ const truncateText = (text: string, length: number) => {
 }
 
 .card:hover {
-  border-color: #469e49;
+  border-color: #00e676;
 }
+
+.card:hover .project-title {
+  color: #00e676;
+}
+
 .card:hover .link {
-  border-color: #469e49;
-  color: #469e49;
+  border-color: #00e676;
+  color: #00e676;
 }
+
 .copy-icon {
   position: absolute;
   bottom: 5%;
@@ -129,7 +144,7 @@ const truncateText = (text: string, length: number) => {
   border: 1px solid #424242;
 }
 .link:hover {
-  background-color: #469e49 !important;
+  background-color: #00e676 !important;
   color: #fff !important;
 }
 </style>

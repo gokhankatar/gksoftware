@@ -35,6 +35,7 @@ export default eventHandler((event) => {
     skills: [
       "HTML",
       "CSS",
+      "Scss-Sass",
       "Javascript",
       "Typescript",
       "VueJs",
@@ -60,6 +61,7 @@ export default eventHandler((event) => {
       "Fetch API",
       "Rest API",
       "SwiperJs",
+      "MomentJs",
       "Hosting",
       "Domain",
       "SaaS",
