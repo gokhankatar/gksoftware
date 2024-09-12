@@ -47,6 +47,13 @@
         append-icon="mdi-open-in-new"
         :text="t('see-this-project')"
       />
+      <v-btn
+        @click="generateTwitterShareLink"
+        target="_blank"
+        variant="tonal"
+        append-icon="mdi-open-in-new"
+        :text="t('share-this-project')"
+      />
     </v-col>
   </v-row>
 </template>
@@ -89,6 +96,31 @@ const getImg = (name: string) => {
     return error;
   }
 };
+
+const generateTwitterShareLink = () => {
+  const projectTitle = t(route.query.title as string);
+  const projectUrl = route.query.link as string;
+
+  const twitterBaseUrl = "https://twitter.com/intent/tweet";
+  const text = `My new project! - ${projectTitle}`;
+  const url = projectUrl;
+
+  const twitterShareUrl = `${twitterBaseUrl}?text=${encodeURIComponent(
+    text
+  )}&url=${encodeURIComponent(url)}`;
+
+  window.open(twitterShareUrl, "_blank");
+};
+
+useSeoMeta({
+  title: t("seo.title"),
+  ogTitle: t("seo.title"),
+  description: t("seo.description"),
+  ogDescription: t("seo.ogDescription"),
+  ogImage: getImg(route.query.title as string),
+  twitterCard: "summary_large_image",
+  twitterImage: getImg(route.query.title as string),
+});
 </script>
 
 <style scoped>

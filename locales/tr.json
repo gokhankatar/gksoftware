@@ -74,5 +74,11 @@
     "certificates": "Sertifikalar",
     "skills": "Yetenekler",
     "experiences": "Deneyimler",
-    "what-next": "Sıradaki Ne ?"
+    "what-next": "Sıradaki Ne ?",
+    "share-this-project":"Projeyi paylaş",
+    "seo": {
+        "title": "GK Software - Web Uygulamaları ve Website Çözümleri",
+        "description": "İhtiyaçlarınıza göre yazılım çözümleri. Modern teknolojiler ile web alanındaki yenilikçi çözümler. Sunucu taraflı işleme, ön yüz ve arka yüz için yeni teknolojiler.",
+        "ogDescription": "Web alanındaki en güncel teknolojiler ile geliştirilen web uygulamaları. GK Software ile sürekli güncel kalın."
+    }
 }

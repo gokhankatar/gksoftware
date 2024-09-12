@@ -24,9 +24,6 @@ import { onMounted, ref } from "vue";
 const isPlaying = ref(true);
 const bgSound = ref<HTMLAudioElement | null>(null);
 const { t } = useI18n();
-useHead({
-  title: `GK SOFTWARE | ${t("home")}`,
-});
 
 const toggleAudio = () => {
   if (bgSound.value) {

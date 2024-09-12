@@ -12,8 +12,21 @@
 </template>
 <script lang="ts" setup>
 import { onMounted, ref } from "vue";
+import ogImg from "~/assets/img/ogImg.png";
 
 const isLoading = ref(true);
+
+const { t } = useI18n();
+
+useSeoMeta({
+  title: t("seo.title"),
+  ogTitle: t("seo.title"),
+  description: t("seo.description"),
+  ogDescription: t("seo.ogDescription"),
+  ogImage: ogImg,
+  twitterCard: "summary_large_image",
+  twitterImage: ogImg,
+});
 
 onMounted(() => {
   isLoading.value = false;
