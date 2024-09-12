@@ -5,15 +5,6 @@
       <v-card
         class="card cursor-pointer transition d-flex flex-column align-start ga-2 pa-2 rounded-lg"
         height="230"
-        :to="{
-          path: `/projects/${item.id}`,
-          query: {
-            title: item.title,
-            description: item.description,
-            link: item.link,
-            technologies: item.technologies,
-          },
-        }"
       >
         <v-card-title class="project-title">{{ t(item.title) }}</v-card-title>
         <v-card-text class="d-none d-sm-flex">{{
