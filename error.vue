@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper bg-black d-flex flex-column justify-center align-center">
+  <div class="wrapper bg-black d-flex justify-center align-center">
     <div class="d-flex flex-column justify-center align-center ga-5">
       <div v-if="error.statusCode === 404" class="text-h3 text-sm-h1 text-center">
         404
