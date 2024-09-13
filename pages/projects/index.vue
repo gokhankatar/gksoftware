@@ -8,7 +8,7 @@
       >
         <v-card-title class="project-title">{{ t(item.title) }}</v-card-title>
         <v-card-text class="d-none d-sm-flex">{{
-          truncateText(t(item.description), 250)
+          truncateText(t(item.description), 160)
         }}</v-card-text>
         <v-card-text class="d-flex d-sm-none">{{
           truncateText(t(item.description), 100)
@@ -94,7 +94,7 @@ const truncateText = (text: string, length: number) => {
 }
 .card {
   position: relative;
-  border: 3px solid #000;
+  border: 3px solid transparent;
 }
 
 .card:hover {

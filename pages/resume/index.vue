@@ -6,7 +6,7 @@
     <div class="content d-flex flex-column align-center align-sm-start ga-1 ga-sm-3 mt-5 mt-sm-0">
       <p class="name text-subtitle-1 text-md-h5 text-lg-h3">{{ data?.general.name }}</p>
       <p @mouseover="open" @mouseleave="close"
-        class="title-job transition cursor-pointer text-h5 text-md-h4 text-lg-h1">
+        class="title-job transition cursor-pointer text-h5 text-md-h4 text-lg-h2 text-xl-h1">
         <v-progress-circular v-if="isHover" color="primary" indeterminate></v-progress-circular>
         {{ title }}
       </p>
