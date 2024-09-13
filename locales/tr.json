@@ -75,10 +75,15 @@
     "skills": "Yetenekler",
     "experiences": "Deneyimler",
     "what-next": "Sıradaki Ne ?",
-    "share-this-project":"Projeyi paylaş",
+    "share-this-project": "Projeyi paylaş",
     "seo": {
         "title": "GK Software - Web Uygulamaları ve Website Çözümleri",
-        "description": "İhtiyaçlarınıza göre yazılım çözümleri. Modern teknolojiler ile web alanındaki yenilikçi çözümler. Sunucu taraflı işleme, ön yüz ve arka yüz için yeni teknolojiler.",
+        "description": "İhtiyaçlarınıza göre yazılım çözümleri. Modern teknolojiler ile web alanındaki yenilikçi çözümler.",
         "ogDescription": "Web alanındaki en güncel teknolojiler ile geliştirilen web uygulamaları. GK Software ile sürekli güncel kalın."
+    },
+    "error": {
+        "page-not-found": "Sayfa bulunamadı! Kaybolmuş görünüyorsun!",
+        "error-msg": "Bir hata oluştu",
+        "return-home": "Anasayfaya geri dön!"
     }
 }

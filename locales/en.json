@@ -75,10 +75,15 @@
     "skills": "Skills",
     "experiences": "Experiences",
     "what-next": "What Next?",
-    "share-this-project":"Share this project",
+    "share-this-project": "Share this project",
     "seo": {
         "title": "GK Software - Web Applications and Website Solutions",
-        "description": "Software solutions according to your needs. Innovative solutions in the web field with modern technologies. New technologies for server-side processing, front-end and back-end.",
+        "description": "Software solutions according to your needs. Innovative solutions in the web field with modern technologies.",
         "ogDescription": "Web applications developed with the latest technologies in the web field. Stay up to date with GK Software."
+    },
+    "error": {
+        "page-not-found": "Page not found! You look lost!",
+        "error-msg": "An error occurred.",
+        "return-home": "Return to home!"
     }
 }
