@@ -1,34 +1,64 @@
 <template>
   <!-- effectFade -->
   <div class="slide-container">
-    <div class="custom-swiper-button-prev rounded-lg d-flex justify-center align-center cursor-pointer transition">
+    <div
+      class="custom-swiper-button-prev rounded-lg d-flex justify-center align-center cursor-pointer transition"
+    >
       <v-icon icon="mdi-arrow-left" size="small" />
     </div>
-    <div class="custom-swiper-button-next rounded-lg d-flex justify-center align-center cursor-pointer transition">
+    <div
+      class="custom-swiper-button-next rounded-lg d-flex justify-center align-center cursor-pointer transition"
+    >
       <v-icon icon="mdi-arrow-right" size="small" />
     </div>
 
-    <Swiper :modules="[
-      SwiperEffectFade,
-      SwiperPagination,
-      SwiperNavigation,
-      SwiperAutoplay,
-      SwiperKeyboard,
-    ]" :effect="'fade'" :keyboard="{
+    <Swiper
+      :modules="[
+        SwiperEffectFade,
+        SwiperPagination,
+        SwiperNavigation,
+        SwiperAutoplay,
+        SwiperKeyboard,
+      ]"
+      :effect="'fade'"
+      :keyboard="{
         enabled: true,
-      }" :grab-cursor="true" :navigation="{
+      }"
+      :grab-cursor="true"
+      :navigation="{
         prevEl: '.custom-swiper-button-prev',
         nextEl: '.custom-swiper-button-next',
-      }" :spaceBetween="10" :loop="true" :autoplay="{
+      }"
+      :spaceBetween="10"
+      :loop="true"
+      :autoplay="{
         delay: 4500,
         disableOnInteraction: false,
-      }" :pagination="{
+      }"
+      :pagination="{
         clickable: true,
-      }" :observer="true" :observe-parents="true">
+      }"
+      :observer="true"
+      :observe-parents="true"
+    >
       <SwiperSlide class="swiper-slide" v-for="item of slides">
-        <v-img class="rounded-xl d-none d-sm-flex" :src="item.img" height="80vh" :aspect-ratio="16 / 9" cover />
-        <v-img class="rounded-xl d-flex d-sm-none" :src="item.smallImg" height="80vh" :aspect-ratio="16 / 9" cover />
-        <div class="content d-flex justify-center justify-sm-space-between align-center pa-5">
+        <v-img
+          class="rounded-xl d-none d-sm-flex"
+          :src="item.img"
+          height="80vh"
+          :aspect-ratio="16 / 9"
+          cover
+        />
+        <v-img
+          class="rounded-xl d-flex d-sm-none"
+          :src="item.smallImg"
+          height="80vh"
+          :aspect-ratio="16 / 9"
+          cover
+        />
+        <div
+          class="content d-flex justify-center justify-sm-space-between align-center pa-5"
+        >
           <div class="left d-flex flex-column ga-3">
             <span class="title text-subtitle-1 text-md-h5 pa-2 rounded-lg">
               {{ item.title }}
@@ -38,8 +68,12 @@
             </p>
           </div>
           <div class="right d-none d-sm-flex">
-            <a class="link transition cursor-pointer pa-3 rounded-xl" :href="item.link" target="_blank">{{ t("see-now")
-              }}</a>
+            <a
+              class="link transition cursor-pointer pa-3 rounded-xl"
+              :href="item.link"
+              target="_blank"
+              >{{ t("see-now") }}</a
+            >
           </div>
         </div>
       </SwiperSlide>
@@ -52,7 +86,12 @@
 
   <!-- effectCoverflow (feature) -->
   <v-row class="d-flex justify-space-between align-center">
-    <v-col cols="12" sm="12" lg="3" class="d-flex flex-column align-center align-md-start ga-5">
+    <v-col
+      cols="12"
+      sm="12"
+      lg="3"
+      class="d-flex flex-column align-center align-md-start ga-5"
+    >
       <h3 class="text-subtitle-1 text-lg-h4">{{ t("why-web-header") }}</h3>
       <hr class="w-75 w-sm-25" color="green-accent-3" />
       <p class="text-subtitle-2 mt-5 text-md-subtitle-1 text-center text-md-start">
@@ -60,19 +99,27 @@
       </p>
     </v-col>
     <v-col cols="12" sm="12" lg="8">
-      <Swiper :modules="[SwiperPagination, SwiperEffectCoverflow, SwiperAutoplay]" :effect="'coverflow'"
-        :grab-cursor="true" :spaceBetween="10" :loop="true" :autoplay="{
+      <Swiper
+        :modules="[SwiperPagination, SwiperEffectCoverflow, SwiperAutoplay]"
+        :effect="'coverflow'"
+        :grab-cursor="true"
+        :spaceBetween="10"
+        :loop="true"
+        :autoplay="{
           delay: 4000,
           disableOnInteraction: false,
-        }" :coverflowEffect="{
+        }"
+        :coverflowEffect="{
           rotate: 50,
           stretch: 0,
           depth: 100,
           modifier: 1,
           slideShadows: true,
-        }" :pagination="{
+        }"
+        :pagination="{
           clickable: true,
-        }" :breakpoints="{
+        }"
+        :breakpoints="{
           '@0.00': {
             slidesPerView: 1,
             spaceBetween: 10,
@@ -85,11 +132,20 @@
             slidesPerView: 3,
             spaceBetween: 20,
           },
-        }">
+        }"
+      >
         <SwiperSlide class="swiper-slide" v-for="item of slidesFeatures">
-          <v-img class="rounded-xl" :src="item.img" height="30vh" :aspect-ratio="16 / 9" cover />
+          <v-img
+            class="rounded-xl"
+            :src="item.img"
+            height="30vh"
+            :aspect-ratio="16 / 9"
+            cover
+          />
           <div class="desc d-flex flex-column ga-2 justify-center align-center">
-            <p class="feature text-subtitle-1 text-sm-h5 text-grey-lighten-4 rounded-lg pa-3">
+            <p
+              class="feature text-subtitle-1 text-sm-h5 text-grey-lighten-4 rounded-lg pa-3"
+            >
               {{ item.feature }}
             </p>
           </div>
@@ -104,7 +160,12 @@
 
   <!-- effectCube (difference) -->
   <v-row class="d-flex flex-row-reverse justify-space-between align-center">
-    <v-col cols="12" sm="12" lg="3" class="d-flex flex-column align-center align-md-start ga-5">
+    <v-col
+      cols="12"
+      sm="12"
+      lg="3"
+      class="d-flex flex-column align-center align-md-start ga-5"
+    >
       <h3 class="text-subtitle-1 text-lg-h4">{{ t("web-app-website-header") }}</h3>
       <hr class="w-75 w-sm-25" color="green-accent-3" />
       <p class="text-subtitle-2 mt-5 text-md-subtitle-1 text-center text-md-start">
@@ -112,23 +173,45 @@
       </p>
     </v-col>
     <v-col cols="12" sm="12" lg="8">
-      <Swiper :modules="[SwiperPagination, SwiperEffectCube, SwiperAutoplay]" :effect="'cube'" :grab-cursor="true"
-        :spaceBetween="10" :cubeEffect="{
+      <Swiper
+        :modules="[SwiperPagination, SwiperEffectCube, SwiperAutoplay]"
+        :effect="'cube'"
+        :grab-cursor="true"
+        :spaceBetween="10"
+        :cubeEffect="{
           shadow: true,
           slideShadows: true,
           shadowOffset: 20,
           shadowScale: 0.94,
-        }" :loop="true" :autoplay="{
+        }"
+        :loop="true"
+        :autoplay="{
           delay: 4500,
           disableOnInteraction: false,
-        }" :pagination="{
+        }"
+        :pagination="{
           clickable: true,
-        }">
+        }"
+      >
         <SwiperSlide class="swiper-slide" v-for="item of slidesDifference">
-          <v-img class="rounded-xl d-none d-sm-flex" :src="item.img" height="30vh" :aspect-ratio="16 / 9" cover />
-          <v-img class="rounded-xl d-flex d-sm-none" :src="item.smallImg" height="30vh" :aspect-ratio="16 / 9" cover />
+          <v-img
+            class="rounded-xl d-none d-sm-flex"
+            :src="item.img"
+            height="30vh"
+            :aspect-ratio="16 / 9"
+            cover
+          />
+          <v-img
+            class="rounded-xl d-flex d-sm-none"
+            :src="item.smallImg"
+            height="30vh"
+            :aspect-ratio="16 / 9"
+            cover
+          />
           <div class="desc d-flex flex-column ga-2 justify-center align-center">
-            <p class="difference text-subtitle-1 text-sm-h5 text-grey-lighten-4 rounded-lg pa-3">
+            <p
+              class="difference text-subtitle-1 text-sm-h5 text-grey-lighten-4 rounded-lg pa-3"
+            >
               {{ item.difference }}
             </p>
           </div>
@@ -143,7 +226,12 @@
 
   <!-- effectCards (tech) -->
   <v-row class="d-flex justify-space-between align-center">
-    <v-col cols="12" sm="12" lg="3" class="d-flex flex-column align-center align-md-start ga-5">
+    <v-col
+      cols="12"
+      sm="12"
+      lg="3"
+      class="d-flex flex-column align-center align-md-start ga-5"
+    >
       <h3 class="text-subtitle-1 text-lg-h4">{{ t("why-new-tech-header") }}</h3>
       <hr class="w-75 w-sm-25" color="green-accent-3" />
       <p class="text-subtitle-2 mt-5 text-md-subtitle-1 text-center text-md-start">
@@ -151,16 +239,36 @@
       </p>
     </v-col>
     <v-col cols="12" sm="12" lg="8">
-      <Swiper :modules="[SwiperEffectCards, SwiperAutoplay]" :effect="'cards'" :grab-cursor="true" :spaceBetween="10"
-        :loop="true" :autoplay="{
+      <Swiper
+        :modules="[SwiperEffectCards, SwiperAutoplay]"
+        :effect="'cards'"
+        :grab-cursor="true"
+        :spaceBetween="10"
+        :loop="true"
+        :autoplay="{
           delay: 4500,
           disableOnInteraction: false,
-        }">
+        }"
+      >
         <SwiperSlide class="swiper-slide" v-for="item of slidesTech">
-          <v-img class="rounded-xl d-none d-sm-flex" :src="item.img" height="30vh" :aspect-ratio="16 / 9" cover />
-          <v-img class="rounded-xl d-flex d-sm-none" :src="item.imgSmall" height="30vh" :aspect-ratio="16 / 9" cover />
+          <v-img
+            class="rounded-xl d-none d-sm-flex"
+            :src="item.img"
+            height="30vh"
+            :aspect-ratio="16 / 9"
+            cover
+          />
+          <v-img
+            class="rounded-xl d-flex d-sm-none"
+            :src="item.imgSmall"
+            height="30vh"
+            :aspect-ratio="16 / 9"
+            cover
+          />
           <div class="desc d-flex flex-column ga-2 justify-center align-center">
-            <p class="tech text-subtitle-1 text-sm-h5 text-grey-lighten-4 rounded-lg pa-3">
+            <p
+              class="tech text-subtitle-1 text-sm-h5 text-grey-lighten-4 rounded-lg pa-3"
+            >
               {{ item.technology }}
             </p>
           </div>
@@ -197,7 +305,7 @@ import featureAnother from "~/assets/img/featureAnother.png";
 import getCountryFeature from "~/assets/img/getCountryFeature.png";
 import blogFeature from "~/assets/img/blogFeature.png";
 
-import blogDifBig from "~/assets/img/blogDifbig.png";
+import blogDifBig from "~/assets/img/blogDifBig.png";
 import blogDifSmall from "~/assets/img/blogDifSmall.png";
 import chatDifBig from "~/assets/img/chatDifBig.png";
 import chatDifSmall from "~/assets/img/chatDifSmall.png";
