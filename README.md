@@ -1,8 +1,8 @@
-## GKSOFTWARE
+# GKSOFTWARE
 
 <img src="assets/screenshots/generalSS.png" />
 
-## Technologies
+# Technologies
 
 - Vue
 - Vite
@@ -11,35 +11,35 @@
 - Typescript
 - Swiper
 
-# /Resume
+## /Resume
 
 <img src="assets/screenshots/resumeSS.png" />
 
-# /Showcase
+## /Showcase
 
 <img src="assets/screenshots/showcaseSS.png" />
 
-# /Projects
+## /Projects
 
 <img src="assets/screenshots/projectsSS.png" />
 
-# Mobile View
+## Mobile View
 
 <img src="assets/screenshots/mobileSS.png" />
 
-## 1.Clone Repository
+# 1.Clone Repository
 
 ```sh
 git clone https://github.com/gokhankatar/gksoftware
 
 ```
-## 2.Go directory
+# 2.Go directory
 
 ```sh
 cd .\gksoftware\
 
 ``` 
-## 3.Install Dependencies
+# 3.Install Dependencies
 
 ### npm
 
@@ -65,7 +65,7 @@ yarn install
 bun install
 
 ``` 
-## 4.Run Project
+# 4.Run Project
 
 ### npm
 
