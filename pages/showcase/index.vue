@@ -323,6 +323,9 @@ import followYourselfSmallTech from "~/assets/img/followYourselfSmallTech.png";
 import merchantileTechBig from "~/assets/img/merchantileTechBig.png";
 import merchantileSmallTech from "~/assets/img/merhcantileSmalltech.png";
 
+import gkmoviesBig from "~/assets/img/gkmoviesBig.png";
+import gkmoviesSmall from "~/assets/img/gkmoviesSmall.png";
+
 const { t } = useI18n();
 
 useHead({
@@ -330,6 +333,13 @@ useHead({
 });
 
 const slides = [
+  {
+    title: t("gkmovies"),
+    description: t("gkmovies-short-desc"),
+    img: gkmoviesBig,
+    smallImg: gkmoviesSmall,
+    link: "https://gkmovies.vercel.app/",
+  },
   {
     title: t("follow-yourself"),
     description: t("follow-yourself-short-desc"),

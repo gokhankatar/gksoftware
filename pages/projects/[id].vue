@@ -68,6 +68,7 @@ import chat from "~/assets/img/chat.png";
 import merchantile from "~/assets/img/merchantile.png";
 import crypto from "~/assets/img/crypto.png";
 import food from "~/assets/img/food.png";
+import gkMovies from "~/assets/img/gkmovies.png";
 import error from "~/assets/img/error.png";
 
 const { t } = useI18n();
@@ -78,6 +79,8 @@ const getImg = (name: string) => {
     return followYourself;
   } else if (name === "get-country") {
     return getCountry;
+  } else if (name === "gkmovies") {
+    return gkMovies;
   } else if (name === "crypto-app") {
     return crypto;
   } else if (name === "food-app") {
