@@ -1,11 +1,9 @@
 export default eventHandler((event) => {
-
   const repositories = [
     {
-      id: '23Jk1273jd',
+      id: "23Jk1273jd",
       title: "follow-yourself",
-      description:
-        "follow-yourself-desc",
+      description: "follow-yourself-desc",
       link: "https://followyourself.net/",
       technologies: [
         "vue",
@@ -15,24 +13,30 @@ export default eventHandler((event) => {
         "vuex",
         "gsap",
         "netlify",
-        "aws"
+        "aws",
       ],
-      command: "git clone https://github.com/gokhankatar/follow-yourself"
+      command: "git clone https://github.com/gokhankatar/follow-yourself",
+    },
+    {
+      id: "mvasdda1234",
+      title: "gkmovies",
+      description: "gkmovies-desc",
+      link: "https://gkmovies.vercel.app/",
+      technologies: ["vue", "nuxt", "swiper", "vercel", "pinia"],
+      command: "git clone https://github.com/gokhankatar/movie-app-test",
     },
     {
       id: "aksdh9123",
       title: "get-country",
-      description:
-        "get-country-desc",
+      description: "get-country-desc",
       link: "https://www.getcountry.net/",
       technologies: ["vue", "vue-router", "gsap", "netlify"],
-      command: "git clone https://github.com/gokhankatar/getcountry"
+      command: "git clone https://github.com/gokhankatar/getcountry",
     },
     {
       id: "123jdnsjnjkc",
       title: "academy",
-      description:
-        "academy-desc",
+      description: "academy-desc",
       link: "https://esrefugurcelik.com/",
       technologies: [
         "vue",
@@ -46,13 +50,12 @@ export default eventHandler((event) => {
         "firebase",
         "netlify",
       ],
-      command: "SORRY! THIS IS A PRIVATE PROJECT!"
+      command: "SORRY! THIS IS A PRIVATE PROJECT!",
     },
     {
       id: "123jdnsjnj123",
       title: "gksoftware",
-      description:
-        "gksoftware-desc",
+      description: "gksoftware-desc",
       link: "https://gksoftware.net/",
       technologies: [
         "vue",
@@ -63,13 +66,12 @@ export default eventHandler((event) => {
         "i18n",
         "vercel",
       ],
-      command: "git clone https://github.com/gokhankatar/gksoftware"
+      command: "git clone https://github.com/gokhankatar/gksoftware",
     },
     {
       id: "123jdnsj22d2",
       title: "crypto-app",
-      description:
-        "crypto-app-desc",
+      description: "crypto-app-desc",
       link: "https://github.com/gokhankatar/crypto-tracker",
       technologies: [
         "vue",
@@ -80,7 +82,7 @@ export default eventHandler((event) => {
         "pinia",
         "firebase",
       ],
-      command: "git clone https://github.com/gokhankatar/crypto-tracker"
+      command: "git clone https://github.com/gokhankatar/crypto-tracker",
     },
     {
       id: "123jdnsjn213ujk",
@@ -96,7 +98,7 @@ export default eventHandler((event) => {
         "momentJs",
         "firebase",
       ],
-      command: "git clone https://github.com/gokhankatar/food-app"
+      command: "git clone https://github.com/gokhankatar/food-app",
     },
     {
       id: "123jdnsjnjxc",
@@ -112,13 +114,12 @@ export default eventHandler((event) => {
         "axios",
         "firebase",
       ],
-      command: "git clone https://github.com/gokhankatar/blog-app"
+      command: "git clone https://github.com/gokhankatar/blog-app",
     },
     {
       id: "123jdnUUUc",
       title: "merchantile-app",
-      description:
-        "merchantile-app-desc",
+      description: "merchantile-app-desc",
       link: "https://github.com/gokhankatar/merchantile-app",
       technologies: [
         "vue",
@@ -130,7 +131,7 @@ export default eventHandler((event) => {
         "axios",
         "vuetify",
       ],
-      command: "git clone https://github.com/gokhankatar/merchantile-app"
+      command: "git clone https://github.com/gokhankatar/merchantile-app",
     },
     {
       id: "87cnKKNKs",
@@ -146,7 +147,7 @@ export default eventHandler((event) => {
         "vuetify",
         "firebase",
       ],
-      command: "git clone https://github.com/gokhankatar/chat-app"
+      command: "git clone https://github.com/gokhankatar/chat-app",
     },
   ];
 
