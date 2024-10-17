@@ -43,14 +43,14 @@
     >
       <SwiperSlide class="swiper-slide" v-for="item of slides">
         <v-img
-          class="rounded-xl d-none d-sm-flex"
+          class="swiper-image-showcase rounded-xl d-none d-sm-flex"
           :src="item.img"
           height="80vh"
           :aspect-ratio="16 / 9"
           cover
         />
         <v-img
-          class="rounded-xl d-flex d-sm-none"
+          class="swiper-image-showcase rounded-xl d-flex d-sm-none"
           :src="item.smallImg"
           height="80vh"
           :aspect-ratio="16 / 9"
@@ -307,24 +307,33 @@ import blogFeature from "~/assets/img/blogFeature.png";
 
 import blogDifBig from "~/assets/img/blogDifBig.png";
 import blogDifSmall from "~/assets/img/blogDifSmall.png";
+
 import chatDifBig from "~/assets/img/chatDifBig.png";
 import chatDifSmall from "~/assets/img/chatDifSmall.png";
+
 import cryptoDifBig from "~/assets/img/cryptoDifBig.png";
 import cryptoDifSmall from "~/assets/img/cryptoDifSmall.png";
+
 import foodDifBig from "~/assets/img/foodDifBig.png";
 import foodDifSmall from "~/assets/img/foodDifSmall.png";
 
 import academyTechBig from "~/assets/img/academyTechBig.png";
 import academySmallTech from "~/assets/img/academySmallTech.png";
+
 import getCountryTechBig from "~/assets/img/getCountrytechBig.png";
 import getCountrySmallTech from "~/assets/img/getCountrySmallTech.png";
+
 import followYourselfTechBig from "~/assets/img/followYourselftechBig.png";
 import followYourselfSmallTech from "~/assets/img/followYourselfSmallTech.png";
+
 import merchantileTechBig from "~/assets/img/merchantileTechBig.png";
 import merchantileSmallTech from "~/assets/img/merhcantileSmalltech.png";
 
 import gkmoviesBig from "~/assets/img/gkmoviesBig.png";
 import gkmoviesSmall from "~/assets/img/gkmoviesSmall.png";
+
+import gkGamesBig from "~/assets/img/gkgamesBig.png";
+import gkGamesSmall from "~/assets/img/gkgamesSmall.png";
 
 const { t } = useI18n();
 
@@ -333,6 +342,13 @@ useHead({
 });
 
 const slides = [
+  {
+    title: t("gkgames"),
+    description: t("gkgames-short-desc"),
+    img: gkGamesBig,
+    smallImg: gkGamesSmall,
+    link: "https://gkgames.vercel.app/",
+  },
   {
     title: t("gkmovies"),
     description: t("gkmovies-short-desc"),
@@ -478,7 +494,9 @@ const slidesTech = [
   background-position: center !important;
   background-size: cover;
 }
-
+.swiper-slide:hover .swiper-image-showcase {
+  filter: brightness(0.8);
+}
 .content {
   position: absolute;
   z-index: 999;
@@ -498,7 +516,7 @@ const slidesTech = [
 }
 
 .title {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(16, 206, 32, 0.658);
 }
 
 .link {
